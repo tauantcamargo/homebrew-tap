@@ -5,21 +5,21 @@
 class Workpulse < Formula
   desc "A minimal, beautiful terminal-based Pomodoro timer"
   homepage "https://github.com/tauantcamargo/workpulse"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.1.0/workpulse_0.1.0_darwin_amd64.tar.gz"
-      sha256 "bc060acbdf01bedcad0ff70c92e464982f2e705103c33edf22c8b7437d195001"
+      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.2.0/workpulse_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f56926441efdafb9e2635df94cbb97fd42368d2cf238b39de8eadd96a49b12f2"
 
       def install
         bin.install "workpulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.1.0/workpulse_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f6c7a9e874a876b3c12bae4b2fa3947d0aaacbfba67a82352a368d8b2a330a8d"
+      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.2.0/workpulse_0.2.0_darwin_arm64.tar.gz"
+      sha256 "3285dea7d4b0a9989499d7fc22dc7ed2a66d487a112d6c9d40051d80e6e99b61"
 
       def install
         bin.install "workpulse"
@@ -29,15 +29,15 @@ class Workpulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.1.0/workpulse_0.1.0_linux_amd64.tar.gz"
-      sha256 "f71037ff23d7d6d05f6fc8331a7828615c32c6a64d89d45cf027ec0c5c5422f1"
+      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.2.0/workpulse_0.2.0_linux_amd64.tar.gz"
+      sha256 "e1c6f6384e6245acfe896edf7859cbd728252fc427383f92a63494702c299cff"
       def install
         bin.install "workpulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.1.0/workpulse_0.1.0_linux_arm64.tar.gz"
-      sha256 "6bd9eafec6e196355e2c0b54cbcd19ddccb922aca38b6ffdfcbc39004387f0b3"
+      url "https://github.com/tauantcamargo/workpulse/releases/download/v0.2.0/workpulse_0.2.0_linux_arm64.tar.gz"
+      sha256 "406ce1e84955e3246e53e401119116020d01c1d0cf3b36aee9a26eb30d8ff571"
       def install
         bin.install "workpulse"
       end
