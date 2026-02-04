@@ -5,21 +5,21 @@
 class Lazyreview < Formula
   desc "Terminal UI for code review across multiple Git providers"
   homepage "https://github.com/tauantcamargo/lazyreview"
-  version "0.25.0"
+  version "0.26.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.25.0/lazyreview_0.25.0_darwin_amd64.tar.gz"
-      sha256 "36530c8736663c02bd53d3702b89c8de67df244a205221569ff96bf96b75ebb4"
+      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.26.0/lazyreview_0.26.0_darwin_amd64.tar.gz"
+      sha256 "ed3c3a4389c65e4da1c229fbacebd734bf7ac569813858e49959db926418e1cf"
 
       def install
         bin.install "lazyreview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.25.0/lazyreview_0.25.0_darwin_arm64.tar.gz"
-      sha256 "383654151055ab2adf0b1afda1ad72940b25f803a6373a883de3d27fe54f3247"
+      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.26.0/lazyreview_0.26.0_darwin_arm64.tar.gz"
+      sha256 "75c19f152424dfa87ba269e548ad50fbee8175a0518084c89eb900f3c752d886"
 
       def install
         bin.install "lazyreview"
@@ -29,15 +29,15 @@ class Lazyreview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.25.0/lazyreview_0.25.0_linux_amd64.tar.gz"
-      sha256 "a97743bf085b025e66caaf27e7f312d63bb19c0bc1a1c36ba37242fcfa74fb90"
+      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.26.0/lazyreview_0.26.0_linux_amd64.tar.gz"
+      sha256 "e26217e90682b8d0b94cd456a44363366c3262cf331679923715a071d740121d"
       def install
         bin.install "lazyreview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.25.0/lazyreview_0.25.0_linux_arm64.tar.gz"
-      sha256 "c7c0046262db77510d881b4f3bdc7e80d521ab779343a0aa01f4088adbd4f21c"
+      url "https://github.com/tauantcamargo/lazyreview/releases/download/v0.26.0/lazyreview_0.26.0_linux_arm64.tar.gz"
+      sha256 "6fbdd4303a66f20b5b4bbbfc6b09030595c32c1480b351152e17451bde5d2ffe"
       def install
         bin.install "lazyreview"
       end
