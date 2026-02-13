@@ -1,8 +1,8 @@
 class Lazyreview < Formula
   desc "TUI code review tool for GitHub PRs"
   homepage "https://github.com/tauantcamargo/lazyreview"
-  url "https://registry.npmjs.org/lazyreview/-/lazyreview-1.0.25.tgz"
-  sha256 "b848119ea2cb6fd4c043fd75c99a390d757fced51c8d888cb9c49070a91c93a1"
+  url "https://registry.npmjs.org/lazyreview/-/lazyreview-1.0.26.tgz"
+  sha256 "fe71654e0b905d13c3d6e32ab90dae1854054882757eb7b9c2b1ea0cf75d6afa"
   license "MIT"
 
   depends_on "node"
